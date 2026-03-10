@@ -14,6 +14,19 @@ export const metadata: Metadata = {
   title: "AppDB — App Store Intelligence for Developers",
   description:
     "Track App Store rankings, discover trending apps, and get data-driven insights for your app development.",
+  openGraph: {
+    title: "AppDB — App Store Intelligence for Developers",
+    description:
+      "Track App Store rankings, discover trending apps, and get data-driven insights for your app development.",
+    siteName: "AppDB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "AppDB — App Store Intelligence for Developers",
+    description:
+      "Track App Store rankings, discover trending apps, and get data-driven insights.",
+  },
 };
 
 export default async function LocaleLayout({

@@ -15,7 +15,9 @@
     "lastUpdated": "마지막 업데이트: {date}",
     "charts": "차트",
     "categoriesNav": "카테고리",
-    "publishersNav": "퍼블리셔"
+    "publishersNav": "퍼블리셔",
+    "compareNav": "비교",
+    "apiNav": "API"
   },
   "home": {
     "title": "앱스토어 인기 차트",
@@ -83,6 +85,29 @@
     "publisher": "퍼블리셔",
     "chartedApps": "차트 앱 수",
     "topApps": "대표 앱"
+  },
+  "compare": {
+    "title": "앱 비교",
+    "subtitle": "두 앱을 나란히 비교해보세요",
+    "selectApp1": "첫 번째 앱 검색...",
+    "selectApp2": "두 번째 앱 검색...",
+    "vsLabel": "VS",
+    "metric": "항목",
+    "betterIndicator": "우세",
+    "trendComparison": "검색 트렌드 비교",
+    "selectBothApps": "비교할 두 앱을 선택하세요"
+  },
+  "apiDocs": {
+    "title": "공개 API",
+    "subtitle": "앱스토어 데이터를 위한 무료 API",
+    "baseUrl": "기본 URL",
+    "endpoint": "엔드포인트",
+    "method": "메서드",
+    "params": "파라미터",
+    "example": "예시",
+    "response": "응답",
+    "tryIt": "시험해보기",
+    "rateLimit": "요청 제한: 분당 60건 이하로 사용해주세요"
   },
   "footer": {
     "disclaimer": "Apple 공식 RSS 피드 및 iTunes API를 통해 수집된 데이터입니다.",

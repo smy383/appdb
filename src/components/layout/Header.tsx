@@ -45,6 +45,18 @@ export default function Header() {
             >
               {t("publishersNav")}
             </Link>
+            <Link
+              href="/compare"
+              className="text-sm text-gray-300 transition-colors hover:text-white"
+            >
+              {t("compareNav")}
+            </Link>
+            <Link
+              href="/api-docs"
+              className="text-sm text-gray-300 transition-colors hover:text-white"
+            >
+              {t("apiNav")}
+            </Link>
           </nav>
           <SearchBar />
           <LocaleSwitcher />

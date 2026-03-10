@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { lookupApp } from "@/lib/apple/itunes";
 import { formatFileSize, formatDate, formatRating } from "@/lib/utils";
@@ -9,6 +10,36 @@ import GoogleTrends from "@/components/app-detail/GoogleTrends";
 
 interface AppPageProps {
   params: { id: string; locale: string };
+}
+
+export async function generateMetadata({
+  params,
+}: AppPageProps): Promise<Metadata> {
+  const app = await lookupApp(params.id);
+
+  if (!app) {
+    return { title: "App Not Found - AppDB" };
+  }
+
+  const ratingText =
+    app.averageRating > 0 ? ` - Rating: ${formatRating(app.averageRating)}/5` : "";
+  const description = `${app.name} by ${app.artistName}${ratingText} - ${app.primaryGenreName}`;
+
+  return {
+    title: `${app.name} - AppDB`,
+    description,
+    openGraph: {
+      title: `${app.name} - AppDB`,
+      description,
+      images: [{ url: app.artworkUrl, width: 512, height: 512, alt: app.name }],
+    },
+    twitter: {
+      card: "summary",
+      title: `${app.name} - AppDB`,
+      description,
+      images: [app.artworkUrl],
+    },
+  };
 }
 
 export default async function AppDetailPage({ params }: AppPageProps) {

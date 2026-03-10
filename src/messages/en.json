@@ -15,7 +15,9 @@
     "lastUpdated": "Last updated: {date}",
     "charts": "Charts",
     "categoriesNav": "Categories",
-    "publishersNav": "Publishers"
+    "publishersNav": "Publishers",
+    "compareNav": "Compare",
+    "apiNav": "API"
   },
   "home": {
     "title": "App Store Top Charts",
@@ -83,6 +85,29 @@
     "publisher": "Publisher",
     "chartedApps": "Charted Apps",
     "topApps": "Top Apps"
+  },
+  "compare": {
+    "title": "Compare Apps",
+    "subtitle": "Compare two apps side by side",
+    "selectApp1": "Search first app...",
+    "selectApp2": "Search second app...",
+    "vsLabel": "VS",
+    "metric": "Metric",
+    "betterIndicator": "Better",
+    "trendComparison": "Search Trend Comparison",
+    "selectBothApps": "Select two apps to compare"
+  },
+  "apiDocs": {
+    "title": "Public API",
+    "subtitle": "Free API endpoints for App Store data",
+    "baseUrl": "Base URL",
+    "endpoint": "Endpoint",
+    "method": "Method",
+    "params": "Parameters",
+    "example": "Example",
+    "response": "Response",
+    "tryIt": "Try it",
+    "rateLimit": "Rate limit: Please be respectful, no more than 60 requests/minute"
   },
   "footer": {
     "disclaimer": "Data sourced from Apple's public RSS feeds and iTunes API.",
