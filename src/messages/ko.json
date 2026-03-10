@@ -12,7 +12,9 @@
     "retry": "다시 시도",
     "allCategories": "전체 카테고리",
     "country": "국가",
-    "lastUpdated": "마지막 업데이트: {date}"
+    "lastUpdated": "마지막 업데이트: {date}",
+    "charts": "차트",
+    "categoriesNav": "카테고리"
   },
   "home": {
     "title": "앱스토어 인기 차트",
@@ -20,7 +22,8 @@
     "topFree": "무료 인기",
     "topPaid": "유료 인기",
     "viewAll": "전체 보기",
-    "dailyMovers": "오늘의 급상승 앱"
+    "dailyMovers": "오늘의 급상승 앱",
+    "newToCharts": "새로 진입한 앱"
   },
   "charts": {
     "title": "{chartType} 앱",
@@ -46,7 +49,21 @@
     "viewOnAppStore": "앱스토어에서 보기",
     "days30": "30일",
     "days60": "60일",
-    "days90": "90일"
+    "days90": "90일",
+    "noRankData": "순위 데이터가 없습니다",
+    "countryComparison": "국가별 순위",
+    "noCountryData": "국가별 순위 데이터가 없습니다",
+    "countryColumn": "국가",
+    "rankColumn": "순위",
+    "changeColumn": "변동"
+  },
+  "search": {
+    "placeholder": "앱 검색..."
+  },
+  "categories": {
+    "title": "카테고리 인사이트",
+    "subtitle": "앱 카테고리를 탐색하고 인기 앱을 확인하세요",
+    "noData": "카테고리 데이터가 없습니다"
   },
   "footer": {
     "disclaimer": "Apple 공식 RSS 피드 및 iTunes API를 통해 수집된 데이터입니다.",

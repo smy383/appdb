@@ -2,6 +2,8 @@ import { getTranslations } from "next-intl/server";
 import { lookupApp } from "@/lib/apple/itunes";
 import { formatFileSize, formatDate, formatRating } from "@/lib/utils";
 import { notFound } from "next/navigation";
+import RankHistoryChart from "@/components/app-detail/RankHistoryChart";
+import CountryComparison from "@/components/app-detail/CountryComparison";
 
 interface AppPageProps {
   params: { id: string; locale: string };
@@ -79,6 +81,12 @@ export default async function AppDetailPage({ params }: AppPageProps) {
           }
         />
       </div>
+
+      {/* Rank History Chart */}
+      <RankHistoryChart appId={params.id} />
+
+      {/* Country Comparison */}
+      <CountryComparison appId={params.id} />
 
       {/* Screenshots */}
       {app.screenshotUrls && app.screenshotUrls.length > 0 && (

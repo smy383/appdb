@@ -2,6 +2,8 @@ import { getTranslations } from "next-intl/server";
 import { fetchTopChart, RssApp } from "@/lib/apple/rss";
 import { DEFAULT_CHART_TYPE, DEFAULT_COUNTRY } from "@/lib/constants";
 import ChartTable from "@/components/charts/ChartTable";
+import BiggestMovers from "@/components/home/BiggestMovers";
+import NewEntries from "@/components/home/NewEntries";
 
 export default async function HomePage() {
   const t = await getTranslations("home");
@@ -36,6 +38,12 @@ export default async function HomePage() {
           initialUpdated={initialUpdated}
         />
       </section>
+
+      {/* Biggest Movers */}
+      <BiggestMovers />
+
+      {/* New to Charts */}
+      <NewEntries />
     </div>
   );
 }

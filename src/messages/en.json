@@ -12,7 +12,9 @@
     "retry": "Retry",
     "allCategories": "All Categories",
     "country": "Country",
-    "lastUpdated": "Last updated: {date}"
+    "lastUpdated": "Last updated: {date}",
+    "charts": "Charts",
+    "categoriesNav": "Categories"
   },
   "home": {
     "title": "App Store Top Charts",
@@ -20,7 +22,8 @@
     "topFree": "Top Free",
     "topPaid": "Top Paid",
     "viewAll": "View All",
-    "dailyMovers": "Biggest Movers Today"
+    "dailyMovers": "Biggest Movers Today",
+    "newToCharts": "New to Charts"
   },
   "charts": {
     "title": "{chartType} Apps",
@@ -46,7 +49,21 @@
     "viewOnAppStore": "View on App Store",
     "days30": "30 Days",
     "days60": "60 Days",
-    "days90": "90 Days"
+    "days90": "90 Days",
+    "noRankData": "No ranking data available",
+    "countryComparison": "Rankings by Country",
+    "noCountryData": "No country ranking data available",
+    "countryColumn": "Country",
+    "rankColumn": "Rank",
+    "changeColumn": "Change"
+  },
+  "search": {
+    "placeholder": "Search apps..."
+  },
+  "categories": {
+    "title": "Category Insights",
+    "subtitle": "Explore app categories and discover top performers",
+    "noData": "No category data available"
   },
   "footer": {
     "disclaimer": "Data sourced from Apple's public RSS feeds and iTunes API.",

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import SearchBar from "@/components/search/SearchBar";
 
 export default function Header() {
   const t = useTranslations("common");
@@ -30,9 +31,16 @@ export default function Header() {
               href="/"
               className="text-sm text-gray-300 transition-colors hover:text-white"
             >
-              Charts
+              {t("charts")}
+            </Link>
+            <Link
+              href="/categories"
+              className="text-sm text-gray-300 transition-colors hover:text-white"
+            >
+              {t("categoriesNav")}
             </Link>
           </nav>
+          <SearchBar />
           <LocaleSwitcher />
         </div>
       </div>
