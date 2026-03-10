@@ -32,6 +32,11 @@ export default function RankHistoryChart({
   const [days, setDays] = useState(30);
   const [history, setHistory] = useState<RankHistoryEntry[]>([]);
   const [loading, setLoading] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     async function fetchHistory() {
@@ -93,7 +98,7 @@ export default function RankHistoryChart({
       </div>
 
       <div className="rounded-xl bg-gray-900 p-4">
-        {loading ? (
+        {!mounted || loading ? (
           <div className="flex h-64 items-center justify-center">
             <div className="h-8 w-8 animate-spin rounded-full border-2 border-gray-600 border-t-blue-500" />
           </div>

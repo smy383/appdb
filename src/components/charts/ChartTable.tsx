@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import ChartRow from "./ChartRow";
 import ChartTypeSelector from "./ChartTypeSelector";
 import CategoryFilter from "./CategoryFilter";
@@ -22,7 +22,6 @@ export default function ChartTable({
   initialUpdated,
 }: ChartTableProps) {
   const t = useTranslations();
-  const locale = useLocale();
 
   const [apps, setApps] = useState<RssApp[]>(initialApps);
   const [chartType, setChartType] = useState(initialChartType);
@@ -30,6 +29,11 @@ export default function ChartTable({
   const [categoryFilter, setCategoryFilter] = useState("");
   const [loading, setLoading] = useState(false);
   const [updated, setUpdated] = useState(initialUpdated);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     async function fetchCharts() {
@@ -70,12 +74,10 @@ export default function ChartTable({
       </div>
 
       {/* Updated info */}
-      {updated && (
+      {updated && mounted && (
         <p className="mb-4 text-xs text-gray-500">
           {t("common.lastUpdated", {
-            date: new Date(updated).toLocaleString(
-              locale === "ko" ? "ko-KR" : "en-US"
-            ),
+            date: new Date(updated).toLocaleDateString(),
           })}
         </p>
       )}
