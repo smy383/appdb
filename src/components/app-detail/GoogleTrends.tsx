@@ -42,8 +42,7 @@ export default function GoogleTrends({ appName }: GoogleTrendsProps) {
         const data = await res.json();
         setTrends(data.trends || []);
         setAverageInterest(data.averageInterest || 0);
-      } catch (error) {
-        console.error("Failed to fetch Google Trends:", error);
+      } catch {
         setTrends([]);
         setAverageInterest(0);
       } finally {

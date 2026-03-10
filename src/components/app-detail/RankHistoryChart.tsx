@@ -47,8 +47,7 @@ export default function RankHistoryChart({
         );
         const data = await res.json();
         setHistory(data.history || []);
-      } catch (error) {
-        console.error("Failed to fetch rank history:", error);
+      } catch {
         setHistory([]);
       } finally {
         setLoading(false);

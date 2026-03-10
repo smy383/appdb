@@ -27,8 +27,7 @@ export default function CountryComparison({ appId }: CountryComparisonProps) {
         const res = await fetch(`/api/country-ranks/${appId}`);
         const data = await res.json();
         setRanks(data.ranks || []);
-      } catch (error) {
-        console.error("Failed to fetch country ranks:", error);
+      } catch {
         setRanks([]);
       } finally {
         setLoading(false);
