@@ -14,7 +14,8 @@
     "country": "Country",
     "lastUpdated": "Last updated: {date}",
     "charts": "Charts",
-    "categoriesNav": "Categories"
+    "categoriesNav": "Categories",
+    "publishersNav": "Publishers"
   },
   "home": {
     "title": "App Store Top Charts",
@@ -67,6 +68,21 @@
     "title": "Category Insights",
     "subtitle": "Explore app categories and discover top performers",
     "noData": "No category data available"
+  },
+  "developer": {
+    "title": "{name}",
+    "totalApps": "{count} apps in store",
+    "chartedApps": "Charted Apps",
+    "allApps": "All Apps",
+    "noApps": "No apps found for this developer"
+  },
+  "publishers": {
+    "title": "Top Publishers",
+    "subtitle": "Publishers with the most apps on the charts",
+    "rank": "#",
+    "publisher": "Publisher",
+    "chartedApps": "Charted Apps",
+    "topApps": "Top Apps"
   },
   "footer": {
     "disclaimer": "Data sourced from Apple's public RSS feeds and iTunes API.",

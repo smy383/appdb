@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { lookupApp } from "@/lib/apple/itunes";
 import { formatFileSize, formatDate, formatRating } from "@/lib/utils";
 import { notFound } from "next/navigation";
+import { Link } from "@/i18n/navigation";
 import RankHistoryChart from "@/components/app-detail/RankHistoryChart";
 import CountryComparison from "@/components/app-detail/CountryComparison";
 import GoogleTrends from "@/components/app-detail/GoogleTrends";
@@ -29,7 +30,12 @@ export default async function AppDetailPage({ params }: AppPageProps) {
         />
         <div className="min-w-0 flex-1">
           <h1 className="text-2xl font-bold text-white">{app.name}</h1>
-          <p className="mt-1 text-gray-400">{app.artistName}</p>
+          <Link
+            href={`/developer/${encodeURIComponent(app.artistName)}`}
+            className="mt-1 inline-block text-gray-400 transition-colors hover:text-blue-400"
+          >
+            {app.artistName}
+          </Link>
 
           <div className="mt-3 flex flex-wrap items-center gap-3">
             <span className="rounded-lg bg-gray-800 px-3 py-1 text-sm text-gray-300">

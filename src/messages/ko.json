@@ -14,7 +14,8 @@
     "country": "국가",
     "lastUpdated": "마지막 업데이트: {date}",
     "charts": "차트",
-    "categoriesNav": "카테고리"
+    "categoriesNav": "카테고리",
+    "publishersNav": "퍼블리셔"
   },
   "home": {
     "title": "앱스토어 인기 차트",
@@ -67,6 +68,21 @@
     "title": "카테고리 인사이트",
     "subtitle": "앱 카테고리를 탐색하고 인기 앱을 확인하세요",
     "noData": "카테고리 데이터가 없습니다"
+  },
+  "developer": {
+    "title": "{name}",
+    "totalApps": "스토어 내 앱 {count}개",
+    "chartedApps": "차트 진입 앱",
+    "allApps": "전체 앱",
+    "noApps": "이 개발사의 앱을 찾을 수 없습니다"
+  },
+  "publishers": {
+    "title": "인기 퍼블리셔",
+    "subtitle": "차트에 가장 많은 앱을 올린 퍼블리셔",
+    "rank": "#",
+    "publisher": "퍼블리셔",
+    "chartedApps": "차트 앱 수",
+    "topApps": "대표 앱"
   },
   "footer": {
     "disclaimer": "Apple 공식 RSS 피드 및 iTunes API를 통해 수집된 데이터입니다.",

@@ -25,10 +25,7 @@ export default function ChartRow({
   ratingCount,
 }: ChartRowProps) {
   return (
-    <Link
-      href={`/app/${appId}`}
-      className="group flex items-center gap-4 rounded-xl px-4 py-3 transition-colors hover:bg-gray-800/50"
-    >
+    <div className="group flex items-center gap-4 rounded-xl px-4 py-3 transition-colors hover:bg-gray-800/50">
       {/* Rank */}
       <div className="flex w-12 flex-shrink-0 items-center justify-center">
         <span
@@ -46,21 +43,29 @@ export default function ChartRow({
       </div>
 
       {/* App Icon */}
-      <div className="flex-shrink-0">
+      <Link href={`/app/${appId}`} className="flex-shrink-0">
         <img
           src={artworkUrl}
           alt={appName}
           className="h-14 w-14 rounded-xl shadow-lg"
           loading="lazy"
         />
-      </div>
+      </Link>
 
       {/* App Info */}
       <div className="min-w-0 flex-1">
-        <h3 className="truncate text-sm font-semibold text-white group-hover:text-blue-400">
+        <Link
+          href={`/app/${appId}`}
+          className="block truncate text-sm font-semibold text-white group-hover:text-blue-400"
+        >
           {appName}
-        </h3>
-        <p className="truncate text-xs text-gray-400">{artistName}</p>
+        </Link>
+        <Link
+          href={`/developer/${encodeURIComponent(artistName)}`}
+          className="block truncate text-xs text-gray-400 transition-colors hover:text-blue-400"
+        >
+          {artistName}
+        </Link>
         <div className="mt-1 flex items-center gap-2">
           <span className="rounded-md bg-gray-800 px-2 py-0.5 text-xs text-gray-400">
             {genreName}
@@ -78,6 +83,6 @@ export default function ChartRow({
           )}
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

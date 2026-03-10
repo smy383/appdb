@@ -39,6 +39,12 @@ export default function Header() {
             >
               {t("categoriesNav")}
             </Link>
+            <Link
+              href="/publishers"
+              className="text-sm text-gray-300 transition-colors hover:text-white"
+            >
+              {t("publishersNav")}
+            </Link>
           </nav>
           <SearchBar />
           <LocaleSwitcher />
