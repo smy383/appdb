@@ -1,0 +1,55 @@
+{
+  "common": {
+    "appName": "AppDB",
+    "tagline": "개발자를 위한 앱스토어 인텔리전스",
+    "rank": "순위",
+    "rankUp": "{count}단계 상승",
+    "rankDown": "{count}단계 하락",
+    "new": "NEW",
+    "noChange": "-",
+    "loading": "로딩 중...",
+    "error": "문제가 발생했습니다",
+    "retry": "다시 시도",
+    "allCategories": "전체 카테고리",
+    "country": "국가",
+    "lastUpdated": "마지막 업데이트: {date}"
+  },
+  "home": {
+    "title": "앱스토어 인기 차트",
+    "subtitle": "실시간 순위를 추적하고 트렌드 앱을 발견하세요",
+    "topFree": "무료 인기",
+    "topPaid": "유료 인기",
+    "viewAll": "전체 보기",
+    "dailyMovers": "오늘의 급상승 앱"
+  },
+  "charts": {
+    "title": "{chartType} 앱",
+    "topFree": "무료 인기",
+    "topPaid": "유료 인기",
+    "filterByCategory": "카테고리별 필터",
+    "showingApps": "{count}개 앱 표시 중"
+  },
+  "appDetail": {
+    "ratings": "평가 {count}개",
+    "averageRating": "평균 평점",
+    "version": "버전",
+    "size": "크기",
+    "price": "가격",
+    "free": "무료",
+    "developer": "개발자",
+    "category": "카테고리",
+    "releaseDate": "출시일",
+    "lastUpdated": "최근 업데이트",
+    "rankHistory": "순위 변동 추이",
+    "description": "설명",
+    "screenshots": "스크린샷",
+    "viewOnAppStore": "앱스토어에서 보기",
+    "days30": "30일",
+    "days60": "60일",
+    "days90": "90일"
+  },
+  "footer": {
+    "disclaimer": "Apple 공식 RSS 피드 및 iTunes API를 통해 수집된 데이터입니다.",
+    "builtWith": "개발자를 위해, 개발자가 만들었습니다."
+  }
+}

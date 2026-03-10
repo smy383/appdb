@@ -1,0 +1,55 @@
+{
+  "common": {
+    "appName": "AppDB",
+    "tagline": "App Store Intelligence for Developers",
+    "rank": "Rank",
+    "rankUp": "Up {count}",
+    "rankDown": "Down {count}",
+    "new": "NEW",
+    "noChange": "-",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "allCategories": "All Categories",
+    "country": "Country",
+    "lastUpdated": "Last updated: {date}"
+  },
+  "home": {
+    "title": "App Store Top Charts",
+    "subtitle": "Track real-time rankings and discover trending apps",
+    "topFree": "Top Free",
+    "topPaid": "Top Paid",
+    "viewAll": "View All",
+    "dailyMovers": "Biggest Movers Today"
+  },
+  "charts": {
+    "title": "{chartType} Apps",
+    "topFree": "Top Free",
+    "topPaid": "Top Paid",
+    "filterByCategory": "Filter by Category",
+    "showingApps": "Showing {count} apps"
+  },
+  "appDetail": {
+    "ratings": "{count} Ratings",
+    "averageRating": "Average Rating",
+    "version": "Version",
+    "size": "Size",
+    "price": "Price",
+    "free": "Free",
+    "developer": "Developer",
+    "category": "Category",
+    "releaseDate": "Release Date",
+    "lastUpdated": "Last Updated",
+    "rankHistory": "Ranking History",
+    "description": "Description",
+    "screenshots": "Screenshots",
+    "viewOnAppStore": "View on App Store",
+    "days30": "30 Days",
+    "days60": "60 Days",
+    "days90": "90 Days"
+  },
+  "footer": {
+    "disclaimer": "Data sourced from Apple's public RSS feeds and iTunes API.",
+    "builtWith": "Built for developers, by developers."
+  }
+}
