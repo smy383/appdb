@@ -55,7 +55,10 @@
     "noCountryData": "No country ranking data available",
     "countryColumn": "Country",
     "rankColumn": "Rank",
-    "changeColumn": "Change"
+    "changeColumn": "Change",
+    "googleTrends": "Google Search Trends",
+    "averageInterest": "Avg. Interest",
+    "noTrendData": "No trend data available"
   },
   "search": {
     "placeholder": "Search apps..."

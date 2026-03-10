@@ -4,6 +4,7 @@ import { formatFileSize, formatDate, formatRating } from "@/lib/utils";
 import { notFound } from "next/navigation";
 import RankHistoryChart from "@/components/app-detail/RankHistoryChart";
 import CountryComparison from "@/components/app-detail/CountryComparison";
+import GoogleTrends from "@/components/app-detail/GoogleTrends";
 
 interface AppPageProps {
   params: { id: string; locale: string };
@@ -87,6 +88,9 @@ export default async function AppDetailPage({ params }: AppPageProps) {
 
       {/* Country Comparison */}
       <CountryComparison appId={params.id} />
+
+      {/* Google Trends */}
+      <GoogleTrends appName={app.name} />
 
       {/* Screenshots */}
       {app.screenshotUrls && app.screenshotUrls.length > 0 && (

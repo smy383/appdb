@@ -55,7 +55,10 @@
     "noCountryData": "국가별 순위 데이터가 없습니다",
     "countryColumn": "국가",
     "rankColumn": "순위",
-    "changeColumn": "변동"
+    "changeColumn": "변동",
+    "googleTrends": "구글 검색 트렌드",
+    "averageInterest": "평균 관심도",
+    "noTrendData": "트렌드 데이터가 없습니다"
   },
   "search": {
     "placeholder": "앱 검색..."
